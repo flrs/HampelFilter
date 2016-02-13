@@ -18,7 +18,7 @@ The source code contains comments that help understand the behavior of the libra
 Usage
 -----
 The following code is a simple usage example:
-```
+```arduino
 HampelFilter dataBuffer = HampelFilter(0.00, 3, 3.50);
 
 void loop() {
