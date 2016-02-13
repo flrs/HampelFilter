@@ -1,0 +1,6 @@
+HampelFilter	KEYWORD1
+write	KEYWORD2
+readMedian	KEYWORD2
+readMAD	KEYWORD2
+readOrderedValue	KEYWORD2
+checkIfOutlier	KEYWORD2
