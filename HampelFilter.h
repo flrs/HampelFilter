@@ -27,7 +27,7 @@ public:
 
 	// adjustable filter parameters
 	uint8_t window_size;	// no. of data points in the filter buffer
-	uint8_t scaling_factor;	// scaling factor setting the outlier detection threshold
+	uint16_t scaling_factor;	// scaling factor setting the outlier detection threshold
 
 	void write(float i_new_value_flt);	// add value to buffer
 	float readMedian();					// read median

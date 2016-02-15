@@ -37,7 +37,7 @@ The sample sketch `writeValuesAndFilter.ino` comes with the library and explains
 
 Download
 --------
-An archive with the library can be downloaded form the [releases page](https://github.com/flrs/HampelFilter/releases).
+An archive with the library can be downloaded from the [releases page](https://github.com/flrs/HampelFilter/releases).
 
 Installation
 ------------

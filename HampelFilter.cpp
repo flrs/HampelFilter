@@ -22,7 +22,7 @@ HampelFilter::HampelFilter(float i_default_val, uint8_t i_window_size, float i_s
         window_size = i_window_size;
 
         // scaling factor determining the outlier detection threshold
-        scaling_factor = i_scaling_factor*100;
+        scaling_factor = (uint16_t)(i_scaling_factor*100.0);
 
         buffer_ptr = i_window_size;
         median_ptr = i_window_size/2;
@@ -134,8 +134,6 @@ Comb sort is picked as it is faster than bubble sort. Both methods work well on 
 */
 void HampelFilter::combSort11(int16_t *input, size_t size)
 {
-
-
         uint8_t i,j,top,switched=0,gap=size;
         int16_t tmp;
         while (1<gap || switched)

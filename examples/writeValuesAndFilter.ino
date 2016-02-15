@@ -16,7 +16,8 @@
 //             tweaking depending on the data. As a general
 //             rule: The smaller the value, the more aggresive
 //             the threshold. A good starting value is 3.5.
-//             The value cannot be smaller than 0.
+//             The value cannot be smaller than 0 and not
+//             greater than 655.
 HampelFilter dataBuffer = HampelFilter(0.00, 11, 3.50);
 
 void setup() {
@@ -91,7 +92,7 @@ void loop() {
       Serial.print("Adding ");
       Serial.print(veryHighValues[i]);
       Serial.print(". ");
-      
+
       Serial.print(veryHighValues[i]);
       if(dataBuffer.checkIfOutlier(veryHighValues[i])==true){
         Serial.print(" is an outlier! ");
